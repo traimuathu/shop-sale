@@ -1,0 +1,24 @@
+@mixin listStyle {
+  list-style: none;
+}
+
+@mixin flexBox($alginItems: stretch, $justifyContent: flex-start, $flexDirection: row) {
+  display: flex;
+  align-items: $alginItems;
+  justify-content: $justifyContent;
+  flex-direction: $flexDirection;
+}
+
+@mixin box($width: 0, $height: 0) {
+  width: $width;
+  height: $height;
+}
+
+@mixin absolute($top: unset, $right: unset, $bottom: unset, $left: unset, $zIndex: unset) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  z-index: $zIndex;
+}
