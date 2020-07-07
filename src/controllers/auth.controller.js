@@ -1,11 +1,11 @@
-const Auth = {};
+const AuthController = {};
 
-Auth.loginPage = (req, res) => {
+AuthController.loginPage = (req, res) => {
   res.render('auth/login');
 }
 
-Auth.signupPage = (req, res) => {
+AuthController.signupPage = (req, res) => {
   res.render('auth/signup');
 }
 
-module.exports = Auth;
+module.exports = AuthController;
