@@ -22,3 +22,10 @@
   left: $left;
   z-index: $zIndex;
 }
+
+@mixin text($textDecoration: none, $textTransform: none, $fsize: 1.4rem, $color: getColor($colors, 'textColor')) {
+  text-decoration: $textDecoration;
+  text-transform: $textTransform;
+  font-size: $fsize;
+  color: $color;
+}
