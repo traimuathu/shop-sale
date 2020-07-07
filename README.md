@@ -1,9 +1,36 @@
 ### SHOP-SALE
 
-#### Run
+#### How to run :wrench:
 
-> Step 1: cd "Project name"
+You must install **Nodejs** and **Yarn**
 
-> Step 2: yarn install
+Clone this repository
+```shell
+git clone https://github.com/traimuathu/shop-sale.git
+```
 
-> Step 3: yarn start
+```shell
+cd shop-sale
+```
+
+Install dependencies
+```shell
+yarn install
+```
+and install **nodemon** (Dev dependencies)
+```shell
+yarn add nodemon --dev
+```
+
+Start server
+```shell
+yarn start
+```
+
+### Technologies
+- [x] Nodejs
+- [x] Mongodb
+- [x] Express
+- [x] EJS
+
+If any problem please mail at: :email: do.minh.tung.2108@gmail.com
