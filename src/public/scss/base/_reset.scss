@@ -7,4 +7,12 @@ html {
     margin: 0;
     padding: 0;
   }
+
+  input:focus {
+    outline: none;
+  }
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
 }
