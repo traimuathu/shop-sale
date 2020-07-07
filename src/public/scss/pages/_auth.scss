@@ -1,0 +1,117 @@
+.login {
+  padding: 5rem 0;
+
+  &__heading {
+    @include text(none, uppercase, 3rem);
+    text-align: center;
+    padding-bottom: 2.4rem;
+  }
+
+  &-form {
+    width: 340px;
+    margin: 0 auto;
+
+    input {
+      height: 34px;
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+      font-size: 1.5rem;
+      padding: 0 10px;
+      border: 1px solid #ebebeb;
+      border-radius: 5px;
+      border: 1px solid rgba(231, 76, 60,0.28) !important;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__btn {
+      @include box(100%, 34px);
+      @include text(none, uppercase, 1.6rem, #fff);      
+      background-color: #e74c3c;
+      border: 1px solid #e74c3c;
+      transition: 0.4s all;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #c0392b;
+      }
+    }
+
+    .login__line {
+      margin: 15px 0;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+
+    .login-action {
+      @include flexBox(center, space-between);
+
+      a {
+        @include text(none, none, 1.5rem);
+        transition: 0.4s all;
+
+        &:hover {
+          color: #e74c3c;
+        }
+      }
+
+      &__forward {
+        background-color: #e67e22;
+        color: #fff!important;
+        padding: 10px 15px;
+        border-radius: 3px;
+        transition: 0.4s all;
+
+        &:hover {
+          background-color: #d35400;
+        }
+      }
+    }
+  }
+}
+
+.signup {
+  @extend .login;
+  &__heading {
+    @extend .login__heading;
+  }
+
+  &-form {
+    @extend .login-form;
+
+    &__btn {
+      @extend .login-form__btn;
+    }
+
+    .signup__line {
+      @extend .login__line;
+    }
+
+    .signup-action {
+      @extend .login-action;
+
+      &__forward {
+        @extend .login-action__forward;
+      }
+    }
+  }
+}
+
+.error {
+  margin: 0 0 2rem 0;
+  border: 1px solid #c0392b;
+  background-color: #c0392b;
+  padding: 10px 15px;
+  font-size: 1.4rem;
+  color: #fff;
+  @include flexBox(center, space-between);
+  border-radius: 4px;
+  display: none;
+  
+  &-icon {
+    cursor: pointer;
+  }
+}
