@@ -24,7 +24,7 @@ yarn add nodemon --dev
 
 Start server
 ```shell
-yarn start
+yarn dev
 ```
 
 ### Technologies
