@@ -24,7 +24,7 @@ yarn add nodemon --dev
 
 Start server
 ```shell
-yarn start
+yarn dev
 ```
 
 ### Technologies
@@ -32,5 +32,6 @@ yarn start
 - [x] Mongodb
 - [x] Express
 - [x] EJS
+- [x] SASS
 
 If any problem please mail at: :email: do.minh.tung.2108@gmail.com
