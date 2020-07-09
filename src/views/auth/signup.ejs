@@ -14,7 +14,7 @@
     <div class="signup">
       <div class="container">
         <div class="signup__heading">Signup</div>
-        <form action="" class="signup-form">
+        <form action="/signup" class="signup-form" method="POST">
           <div class="error">
             <p class="error-text">
               Error: username is valid
@@ -25,7 +25,7 @@
           <input type="text" name="email" placeholder="email">
           <input type="text" name="fullname" placeholder="fullname">
           <input type="password" name="password" placeholder="password">
-          <button class="signup-form__btn">signup</button>
+          <button type="submit" class="signup-form__btn">signup</button>
           <div class="signup__line">or</div>
           <div class="signup-action">
             <a href="">Forgot password?</a>
