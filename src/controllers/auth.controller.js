@@ -1,3 +1,6 @@
+// Import Auth Service
+const AuthService = require('../services/auth.service');
+
 const AuthController = {};
 
 AuthController.loginPage = (req, res) => {
@@ -7,5 +10,7 @@ AuthController.loginPage = (req, res) => {
 AuthController.signupPage = (req, res) => {
   res.render('auth/signup');
 }
+
+AuthController.signup = AuthService.signup;
 
 module.exports = AuthController;
