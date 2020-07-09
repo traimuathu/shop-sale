@@ -14,7 +14,7 @@
     <div class="login">
       <div class="container">
         <div class="login__heading">LOGIN</div>
-        <form action="" class="login-form">
+        <form action="/login" class="login-form" method="GET">
           <div class="error">
             <p class="error-text">
               Error: username is valid
@@ -23,7 +23,7 @@
           </div>
           <input type="text" name="username" placeholder="Enter your username">
           <input type="password" name="password" placeholder="Enter your password">
-          <button class="login-form__btn">login</button>
+          <button type="submit" class="login-form__btn">login</button>
           <div class="login__line">or</div>
           <div class="login-action">
             <a href="">Forgot password?</a>
